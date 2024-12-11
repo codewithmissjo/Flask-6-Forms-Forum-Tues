@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h1>MESSAGE</h1>
+
+<form method="POST" action="/domessage">
+    <label>Username</label>
+    <input type="text" name="username" />
+    <br><br>
+    <label>What is your message?</label>
+    <textarea id="message" name="message"></textarea>
+    <br><br>
+    <!--button type="submit">SEND!</button-->
+    <input type="submit" value="SEND!">
+</form>
+{% endblock %}
